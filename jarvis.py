@@ -91,7 +91,7 @@ def wishMe():
 
 
 def sendEmail(to, content):
-    os.startfile('C:\\Users\\Intel\\Desktop\\python\\Anmol Tripathi RCTSEC (2).pdf')
+   
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
@@ -323,7 +323,7 @@ class MainThread(QThread):
                 try:
                     speak("What should I say?")
                     content = self.takeCommand()
-                    to = "abhay.dhumal9@gmail.com"
+                    to = ""
                     sendEmail(to, content)
                     speak("Email has been sent!")
                 except Exception as e:
